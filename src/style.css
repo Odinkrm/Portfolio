@@ -1,0 +1,89 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --default-color: #d3c09a;
+  --secondary-color: #f3e6e3;
+  --tertiary-color: #dbe3e5;
+  --link-color: #393e46;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 80px;
+}
+header h2,
+.contact-section h2 {
+  font-size: 40px;
+}
+header h3 {
+  font-size: 24px;
+  opacity: 70%;
+}
+p {
+  font-size: 18px;
+  color: var(--link-color);
+  line-height: 1.5;
+}
+
+/*Utility classes*/
+.center {
+  text-align: center;
+}
+.nav-link:hover {
+  color: var(--default-color) !important;
+}
+
+.contact-links a,
+.project-link {
+  border-radius: 5px;
+  padding: 12px 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.contact-button {
+  margin: 20px;
+  color: #fff;
+  background-color: var(--default-color);
+  box-shadow: var(--box-shadow);
+}
+.contact-button:hover {
+  color: var(--default-color);
+  background-color: transparent;
+  border: 1px solid var(--default-color);
+  transition: all 200ms ease-in-out;
+}
+.about-button {
+  margin: 20px;
+  color: var(--default-color);
+  border: 1px solid var(--default-color);
+}
+.about-button:hover {
+  color: var(--default-color);
+  border: 2px solid var(--default-color);
+  padding: 11px 17px;
+}
+.project-link {
+  background-color: var(--tertiary-color);
+  color: var(--link-color);
+  box-shadow: var(--box-shadow);
+  border: 1px solid #d6dee0;
+}
+.project-link:hover {
+  color: var(--link-color);
+  padding: 12px 9px;
+  border: 2px solid #c9d1d3;
+  padding: 11px 17px;
+}
+/*About page*/
+#email-link {
+  color: var(--link-color);
+  font-size: 24px;
+  text-align: center;
+}
+#email-link:hover {
+  color: var(--default-color);
+  padding: 10px;
+  text-decoration: none;
+}
