@@ -31,10 +31,10 @@ p {
 .center {
   text-align: center;
 }
+
 .nav-link:hover {
   color: var(--default-color) !important;
 }
-
 .contact-links a,
 .project-link {
   border-radius: 5px;
@@ -94,4 +94,30 @@ footer span a {
 footer span a:hover {
   color: var(--default-color);
   text-decoration: underline;
+}
+/*Media Queries*/
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 60px;
+  }
+  header h2,
+  .contact-section h2 {
+    font-size: 30px;
+  }
+  header h3 {
+    font-size: 20px;
+    opacity: 70%;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .contact-links a,
+  .project-link {
+    border-radius: 5px;
+    padding: 10px 16px;
+  }
+  #email-link {
+    font-size: 20px;
+  }
 }
