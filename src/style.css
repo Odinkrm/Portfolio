@@ -1,65 +1,75 @@
 :root {
   --default-color: #d3c09a;
-  --secondary-color: #f3e6e3;
+  --secondary-color: #f4f4f4;
   --tertiary-color: #dbe3e5;
   --link-color: #393e46;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
-header h1 {
-  font-size: 80px;
+nav {
+  background-color: var(--secondary-color);
 }
-header h2,
-.contact-section h2 {
-  font-size: 40px;
+.navbar-nav {
+  padding: 15px 0;
 }
-header h3 {
-  font-size: 24px;
-  opacity: 70%;
+.navbar-nav li a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
 }
-p {
-  font-size: 18px;
-  color: var(--link-color);
-  line-height: 1.5;
+.active {
+  color: var(--default-color) !important;
 }
-
-/*Utility classes*/
-.center {
-  text-align: center;
-}
-
 .nav-link:hover {
   color: var(--default-color) !important;
 }
-.contact-links a,
-.project-link {
-  border-radius: 5px;
-  padding: 12px 18px;
-  text-decoration: none;
-  text-transform: capitalize;
+header {
+  padding: 200px 0;
+  background-color: var(--secondary-color);
 }
-.contact-button {
+header h2 {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+header h1 {
+  font-family: Playfair Display;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 128px;
+}
+header h3 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #212529;
+  opacity: 70%;
+}
+.cta-button {
+  display: inline-block;
   margin: 20px;
-  color: #fff;
+  color: var(--secondary-color);
   background-color: var(--default-color);
   box-shadow: var(--box-shadow);
+  padding: 18px 46px;
+  border-radius: 4px;
+  text-decoration: none;
 }
-.contact-button:hover {
+.cta-button a {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.cta-button:hover {
   color: var(--default-color);
   background-color: transparent;
   border: 1px solid var(--default-color);
   transition: all 200ms ease-in-out;
 }
-.about-button {
-  margin: 20px;
-  color: var(--default-color);
-  border: 1px solid var(--default-color);
-}
-.about-button:hover {
-  color: var(--default-color);
-  border: 2px solid var(--default-color);
-  padding: 11px 17px;
-}
+
 .project-link {
   background-color: var(--tertiary-color);
   color: var(--link-color);
