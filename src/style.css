@@ -5,6 +5,9 @@
   --link-color: #393e46;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+body {
+  background: #e5e5e5;
+}
 nav {
   background-color: var(--secondary-color);
 }
@@ -50,7 +53,7 @@ header h3 {
 .cta-button,
 .work-inquiry-button a {
   display: inline-block;
-  margin: 20px;
+  margin: 20px 0;
   color: var(--secondary-color);
   background-color: var(--default-color);
   box-shadow: var(--box-shadow);
@@ -116,7 +119,7 @@ header h3 {
 }
 /*Work inquiry Section*/
 .work-inquiry {
-  margin: 190px 0;
+  margin: 190px 0 70px 0;
   padding: 40px 120px;
   background-color: var(--secondary-color);
   border-radius: 20px;
@@ -138,8 +141,11 @@ header h3 {
   color: #272142;
   opacity: 70%;
 }
+
 .work-inquiry-button a:hover {
+  box-shadow: none;
   color: #fff;
+  transition: all 200ms ease-in-out;
 }
 /*About page*/
 #email-link {
@@ -186,7 +192,94 @@ footer span a:hover {
   .work-inquiry-button a {
     margin-top: 20px;
   }
-  #email-link {
-    font-size: 20px;
+  .social-icons {
+    display: flex;
+    justify-content: center;
   }
+}
+/*About Page*/
+.about-me {
+  padding: 200px 0 100px 0;
+}
+.about-me-description h1 {
+  font-family: Playfair Display;
+  font-size: 64px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.about-me-description h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  color: #272142;
+  margin: 30px 0;
+}
+.about-me-description p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(39, 33, 66, 0.7);
+}
+.about-me-description a {
+  margin: 20px 0;
+}
+
+.about-me-photo img {
+  border-radius: 20px;
+}
+/*Projects Page*/
+.about-header {
+  max-width: 70%;
+  padding: 200px 0 100px 0;
+  font-family: Playfair Display;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 85px;
+  text-align: left;
+}
+.project-card {
+  margin-bottom: 40px;
+}
+.project-card img {
+  border-radius: 20px;
+}
+.project-card h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+.project-card h3 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+.socials a {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.socials a:hover {
+  color: #000;
+}
+.social-icons {
+  padding: 0 200px;
+}
+.social-icons svg {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--default-color);
+  padding: 20px;
+  line-height: 20.7px;
+  margin: 0 15px;
+  border-radius: 100%;
+  background: rgba(211, 192, 154, 0.1);
+}
+.social-icons svg:hover {
+  background: rgba(211, 192, 154, 0.2);
+  transition: all 200ms ease-in-out;
 }
