@@ -41,6 +41,7 @@ nav .logotype {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.55) !important;
 }
+/*Home Page*/
 header {
   padding: 220px 0;
   background-color: var(--secondary-color);
@@ -116,29 +117,6 @@ header h3 {
   background-color: var(--default-color);
   transition: all 100ms ease-in-out;
 }
-/*Work inquiry Section*/
-.work-inquiry {
-  margin: 190px 0 70px 0;
-  padding: 40px 120px;
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.work-inquiry-text h3 {
-  font-family: var(--heading-font-family);
-  font-size: 48px;
-  font-weight: 400;
-  padding: 18px 0;
-}
-.work-inquiry-text p {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--tertiary-color);
-  opacity: 70%;
-}
 
 /*About Page*/
 .about-me {
@@ -193,6 +171,41 @@ header h3 {
   opacity: 70%;
 }
 
+/*Contact Page*/
+.contact-me h2 {
+  font-size: 28px;
+}
+.contact-me a {
+  color: #000;
+  opacity: 70%;
+  font-size: 20px;
+  font-weight: 500;
+}
+/*Work inquiry Section*/
+.work-inquiry {
+  margin: 190px 0 70px 0;
+  padding: 40px 120px;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-inquiry-text h3 {
+  font-family: var(--heading-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  padding: 18px 0;
+}
+.work-inquiry-text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--tertiary-color);
+  opacity: 70%;
+}
+
+/*Social circles*/
 .socials a {
   color: #000;
   font-size: 24px;
@@ -205,10 +218,10 @@ header h3 {
   padding: 0 200px;
 }
 .social-icons svg {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   color: var(--default-color);
-  padding: 20px;
+  padding: 16px;
   line-height: 20.7px;
   margin: 0 15px;
   border-radius: 100%;
@@ -217,16 +230,6 @@ header h3 {
 .social-icons svg:hover {
   background: rgba(211, 192, 154, 0.2);
   transition: all 100ms ease-in-out;
-}
-/*Contact Page*/
-.contact-me h2 {
-  font-size: 28px;
-}
-.contact-me a {
-  color: #000;
-  opacity: 70%;
-  font-size: 20px;
-  font-weight: 500;
 }
 /*Media Queries*/
 @media (max-width: 576px) {
