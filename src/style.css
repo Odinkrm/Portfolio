@@ -1,9 +1,10 @@
 :root {
   --default-color: #d3c09a;
   --secondary-color: #f4f4f4;
-  --tertiary-color: #dbe3e5;
-  --link-color: #393e46;
+  --tertiary-color: #272142;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 body {
   background: #e5e5e5;
@@ -11,11 +12,20 @@ body {
 nav {
   background-color: var(--secondary-color);
 }
+h1 {
+  font-family: var(--heading-font-family);
+}
+a,
+p,
+h2,
+h3 {
+  font-family: var(--default-font-family);
+}
+
 .navbar-nav {
   padding: 15px 0;
 }
 .navbar-nav li a {
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
   text-align: left;
@@ -27,31 +37,27 @@ nav {
   color: var(--default-color) !important;
 }
 header {
-  padding: 200px 0;
+  padding: 220px 0;
   background-color: var(--secondary-color);
 }
 header h2 {
-  font-family: Poppins;
   font-size: 36px;
   font-weight: 700;
   line-height: 54px;
 }
 header h1 {
-  font-family: Playfair Display;
   font-size: 96px;
   font-weight: 400;
   line-height: 128px;
 }
 header h3 {
-  font-family: Poppins;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
   color: #212529;
   opacity: 70%;
 }
-.cta-button,
-.work-inquiry-button a {
+.cta-button {
   display: inline-block;
   margin: 20px 0;
   color: var(--secondary-color);
@@ -60,38 +66,29 @@ header h3 {
   padding: 18px 46px;
   border-radius: 4px;
   text-decoration: none;
-}
-.cta-button,
-.work-inquiry-button a {
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
-  line-height: 27px;
 }
 
 .cta-button:hover {
-  color: var(--default-color);
-  background-color: transparent;
-  border: 1px solid var(--default-color);
   box-shadow: none;
+  color: #fff;
   transition: all 200ms ease-in-out;
 }
 #featured-projects {
   text-align: center;
   padding: 100px 0 70px 0;
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
 }
 
 .project-intro-text h2 {
-  font-family: Playfair Display;
+  font-family: var(--heading-font-family);
   font-size: 64px;
   font-weight: 400;
   line-height: 85px;
 }
 .project-intro-text p {
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -102,7 +99,6 @@ header h3 {
   margin-top: 18px;
 }
 .project-link a {
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -129,42 +125,96 @@ header h3 {
   justify-content: space-between;
 }
 .work-inquiry-text h3 {
-  font-family: Playfair Display;
+  font-family: var(--heading-font-family);
   font-size: 48px;
   font-weight: 400;
   padding: 18px 0;
 }
 .work-inquiry-text p {
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
-  color: #272142;
+  color: var(--tertiary-color);
   opacity: 70%;
 }
 
-.work-inquiry-button a:hover {
-  box-shadow: none;
-  color: #fff;
-  transition: all 200ms ease-in-out;
+/*About Page*/
+.about-me {
+  padding: 200px 0 100px 0;
 }
-/*About page*/
-#email-link {
-  color: var(--link-color);
+.about-me-description h1 {
+  font-size: 64px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.about-me-description h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--tertiary-color);
+  margin: 30px 0;
+}
+.about-me-description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(39, 33, 66, 0.7);
+}
+.about-me-description a {
+  margin: 20px 0;
+}
+
+.about-me-photo img {
+  border-radius: 20px;
+}
+/*Projects Page*/
+.about-header {
+  max-width: 70%;
+  padding: 200px 0 100px 0;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 85px;
+  text-align: left;
+}
+.project-card {
+  margin-bottom: 40px;
+}
+.project-card img {
+  border-radius: 20px;
+}
+.project-card h2 {
   font-size: 24px;
-  text-align: center;
+  font-weight: 700;
 }
-#email-link:hover {
-  color: var(--default-color);
-  padding: 10px;
+.project-card h3 {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+.socials a {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
   text-decoration: none;
 }
-footer span a {
-  color: var(--default-color);
-  text-decoration: none;
+.socials a:hover {
+  color: #000;
 }
-footer span a:hover {
+.social-icons {
+  padding: 0 200px;
+}
+.social-icons svg {
+  font-size: 18px;
+  font-weight: 400;
   color: var(--default-color);
-  text-decoration: underline;
+  padding: 20px;
+  line-height: 20.7px;
+  margin: 0 15px;
+  border-radius: 100%;
+  background: rgba(211, 192, 154, 0.1);
+}
+.social-icons svg:hover {
+  background: rgba(211, 192, 154, 0.2);
+  transition: all 200ms ease-in-out;
 }
 /*Media Queries*/
 @media (max-width: 576px) {
@@ -189,97 +239,9 @@ footer span a:hover {
     text-align: center;
     display: block !important;
   }
-  .work-inquiry-button a {
-    margin-top: 20px;
-  }
+
   .social-icons {
     display: flex;
     justify-content: center;
   }
-}
-/*About Page*/
-.about-me {
-  padding: 200px 0 100px 0;
-}
-.about-me-description h1 {
-  font-family: Playfair Display;
-  font-size: 64px;
-  font-weight: 400;
-  padding-top: 40px;
-}
-.about-me-description h2 {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 700;
-  color: #272142;
-  margin: 30px 0;
-}
-.about-me-description p {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  color: rgba(39, 33, 66, 0.7);
-}
-.about-me-description a {
-  margin: 20px 0;
-}
-
-.about-me-photo img {
-  border-radius: 20px;
-}
-/*Projects Page*/
-.about-header {
-  max-width: 70%;
-  padding: 200px 0 100px 0;
-  font-family: Playfair Display;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 85px;
-  text-align: left;
-}
-.project-card {
-  margin-bottom: 40px;
-}
-.project-card img {
-  border-radius: 20px;
-}
-.project-card h2 {
-  font-family: Poppins;
-  font-size: 24px;
-  font-weight: 700;
-}
-.project-card h3 {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 70%;
-}
-
-.socials a {
-  color: #000;
-  font-family: Poppins;
-  font-size: 24px;
-  font-weight: 500;
-  text-decoration: none;
-}
-.socials a:hover {
-  color: #000;
-}
-.social-icons {
-  padding: 0 200px;
-}
-.social-icons svg {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--default-color);
-  padding: 20px;
-  line-height: 20.7px;
-  margin: 0 15px;
-  border-radius: 100%;
-  background: rgba(211, 192, 154, 0.1);
-}
-.social-icons svg:hover {
-  background: rgba(211, 192, 154, 0.2);
-  transition: all 200ms ease-in-out;
 }
