@@ -23,7 +23,7 @@ h3 {
 }
 
 .navbar-nav {
-  padding: 15px 0;
+  padding: 8px 0;
 }
 .navbar-nav li a {
   font-size: 16px;
@@ -33,6 +33,10 @@ h3 {
 .active,
 .nav-link:hover {
   color: var(--default-color) !important;
+}
+nav .logotype {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.55) !important;
 }
 header {
   padding: 220px 0;
