@@ -188,7 +188,6 @@ header h3 {
   background-color: var(--secondary-color);
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -214,9 +213,7 @@ header h3 {
 .socials a:hover {
   color: #000;
 }
-.social-icons {
-  padding: 0 200px;
-}
+
 .social-icons svg {
   font-size: 22px;
   font-weight: 400;
@@ -232,7 +229,7 @@ header h3 {
   transition: all 100ms ease-in-out;
 }
 /*Media Queries*/
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   header h1 {
     font-size: 60px;
   }
@@ -247,12 +244,6 @@ header h3 {
   p {
     font-size: 16px;
     line-height: 1.5;
-  }
-  .work-inquiry {
-    margin: 90px 0;
-    padding: 30px 15px;
-    text-align: center;
-    display: block !important;
   }
 
   .social-icons {
